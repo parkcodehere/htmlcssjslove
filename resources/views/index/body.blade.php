@@ -9,30 +9,9 @@
       <br>
       <div>
         <table class="link">
-          <tr>
-            <td>
-              <a class="color-fb" href="https://www.facebook.com/groups/319148675309380/">
-                <i class="fa fa-facebook-official"></i>
-              </a>
-            </td>
-            <td>
-              <a class="color-fb" href="https://www.facebook.com/groups/319148675309380/">
-                &nbsp;Study Group
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a class="color-github" href="https://github.com/htmlcssjslove/htmlcssjslove.github.io">
-                <i class="fa fa-github"></i>
-              </a>
-            </td>
-            <td>
-              <a class="color-github" href="https://github.com/htmlcssjslove/htmlcssjslove.github.io">
-                &nbsp;Source Code
-              </a>
-            </td>
-          </tr>
+          @include('index.links.fb')
+          @include('index.links.github')
+          @include('index.links.people')
         </table>
       </div>
     </td>

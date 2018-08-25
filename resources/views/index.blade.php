@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    @include('index.head')
-  </head>
-  <body>
-    @include('index.body')
-  </body>
-</html>
+@extends('layout.base')
+
+@section('head')
+  @include('index.style')
+@endsection
+
+@section('content')
+  @include('index.body')
+@endsection
