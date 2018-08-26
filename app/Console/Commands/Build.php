@@ -57,7 +57,7 @@ class Build extends Command
 
           $continues = [
             '.', '..', '.git', '.gitignore', 'README.md',
-            'pages',
+            'pages', 'lessons',
           ];
           foreach (scandir($output.'/'.$key) as $item) {
             if (in_array($item, $continues)) {

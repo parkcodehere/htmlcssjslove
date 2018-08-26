@@ -11,7 +11,6 @@
         <table class="link">
           @include('index.links.fb')
           @include('index.links.github')
-          @include('index.links.people')
         </table>
       </div>
     </td>
