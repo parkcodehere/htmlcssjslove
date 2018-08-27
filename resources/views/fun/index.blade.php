@@ -13,17 +13,25 @@
   </style>
 @endsection
 
+@php
+  $items = [
+    'google-logo-colors' => ['Google Logo Colors'],
+    'how-many-14' => ['How Many 14?'],
+    'colors' => ['Colors'],
+  ];
+@endphp
+
 @section('content')
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="main">
           <ul class="list-group">
-            <li class="list-group-item">
-              <a href="{{ url('/fun/how-many-14') }}">
-                How Many 14
-              </a>
-            </li>
+            @foreach ($items as $k => $i)
+              <li class="list-group-item">
+                <a href="{{ url('/fun/'.$k) }}">{{ $i[0] }}</a>
+              </li>
+            @endforeach
             <li class="list-group-item">Dapibus ac facilisis in</li>
             <li class="list-group-item">Morbi leo risus</li>
             <li class="list-group-item">Porta ac consectetur ac</li>
