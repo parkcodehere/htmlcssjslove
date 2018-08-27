@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/fun/{slug?}', 'FunController@index');
+
 Route::get('/', function () {
     return view('index');
 });

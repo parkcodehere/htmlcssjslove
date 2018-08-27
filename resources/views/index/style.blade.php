@@ -38,4 +38,7 @@
   a.color-people {
     color: ForestGreen;
   }
+  a.color-fun {
+    color: RoyalBlue;
+  }
 </style>

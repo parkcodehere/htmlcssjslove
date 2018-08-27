@@ -11,6 +11,7 @@
         <table class="link">
           @include('index.links.fb')
           @include('index.links.github')
+          @include('index.links.fun')
         </table>
       </div>
     </td>
