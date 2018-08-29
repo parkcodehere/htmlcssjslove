@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Schema, View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
+
+        $extensions = [
+            'blade.js' => 'blade',
+            'blade.css' => 'blade',
+        ];
+        foreach ($extensions as $e => $i) {
+            View::addExtension($e, $i);
+        }
     }
 
     /**

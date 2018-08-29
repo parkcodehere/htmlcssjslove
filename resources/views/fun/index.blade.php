@@ -15,8 +15,12 @@
 
 @php
   $items = [
+    'test' => ['test'],
+    'piano' => ['Piano'],
+    'game-boards' => ['Game Boards'],
     'google-logo-colors' => ['Google Logo Colors'],
     'how-many-14' => ['How Many 14?'],
+    'fb-cover-design' => ['Facebook Cover Design'],
     'colors' => ['Colors'],
   ];
 @endphp
